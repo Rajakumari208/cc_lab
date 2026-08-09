@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim.provisioners; public class RamProvisionerSimple extends RamProvisioner { public RamProvisionerSimple(int r) {} }

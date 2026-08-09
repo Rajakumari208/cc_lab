@@ -1,0 +1,23 @@
+Experiment 6: VM File Transfer (Using SCP/SFTP)
+Aim: Transfer files between Host OS and Guest OS in VM environment
+
+Shell script (vm_file_transfer.sh):
+#!/bin/bash
+HOST="192.168.56.101"  # VM IP Address
+USER="ubuntu"
+FILE="test_payload.txt"
+DEST="/home/ubuntu/incoming/"
+
+echo "Initiating Secure Copy Protocol (SCP)..."
+scp -o StrictHostKeyChecking=no $FILE $USER@$HOST:$DEST
+if [ $? -eq 0 ]; then
+    echo "Transfer Status: SUCCESS"
+else
+    echo "Transfer Status: FAILED"
+fi
+
+Verification Trace:
+$ ./vm_file_transfer.sh
+Initiating Secure Copy Protocol (SCP)...
+test_payload.txt                          100%   12KB   2.4MB/s   00:00
+Transfer Status: SUCCESS

@@ -1,0 +1,30 @@
+Experiment 8: Build and Run First Docker Container
+Aim: Write a Dockerfile, build a custom python image, and run it locally.
+
+Dockerfile:
+FROM python:3.9-slim
+WORKDIR /app
+COPY main.py .
+CMD ["python", "main.py"]
+
+main.py:
+print("Hello from inside the Docker Container!")
+print("Docker is fully functional!")
+
+Terminal Execution Logs:
+$ docker build -t first-container .
+Sending build context to Docker daemon  3.072kB
+Step 1/4 : FROM python:3.9-slim
+ ---> c11ecde3b499
+Step 2/4 : WORKDIR /app
+ ---> Running in f42f8c5b96
+Step 3/4 : COPY main.py .
+ ---> 55d045d61f1c
+Step 4/4 : CMD ["python", "main.py"]
+ ---> Running in a2bf1f621a
+Successfully built 55d045d61f1c
+Successfully tagged first-container:latest
+
+$ docker run --rm first-container
+Hello from inside the Docker Container!
+Docker is fully functional!

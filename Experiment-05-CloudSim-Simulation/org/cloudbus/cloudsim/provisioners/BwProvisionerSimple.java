@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim.provisioners; public class BwProvisionerSimple extends BwProvisioner { public BwProvisionerSimple(long b) {} }

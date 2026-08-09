@@ -1,0 +1,12 @@
+--- hello.c Output ---
+Hello from Virtual Machine!
+C compiler is working correctly.
+
+--- leapyear.c Output (Input: 2024) ---
+Leap Year Checker
+Enter year: 2024 is a Leap Year
+
+--- leapyear.c Output (Input: 2025) ---
+Leap Year Checker
+Enter year: 2025 is NOT a Leap Year
+

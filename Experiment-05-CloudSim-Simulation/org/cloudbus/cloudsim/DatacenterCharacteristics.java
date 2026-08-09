@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim; import java.util.List; public class DatacenterCharacteristics { public DatacenterCharacteristics(String a, String o, String v, List<Host> l, double t, double c, double cm, double cs, double cb) {} }

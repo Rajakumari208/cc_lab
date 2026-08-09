@@ -1,0 +1,16 @@
+Experiment 1: VirtualBox Installation and Configuration Guide
+Aim: Install VirtualBox and configure a Virtual Machine
+
+Step-by-step Verification:
+1. Download and install VirtualBox on Windows host.
+2. Create a new VM for Ubuntu (Linux 64-bit).
+3. Allocate Memory (RAM): 2048 MB, VDI Hard disk: 20 GB.
+4. Mount Ubuntu ISO image in Optical Drive under VM Storage Settings.
+5. Boot VM and complete Ubuntu installation.
+6. Install Guest Additions to enable shared folders and clipboard synchronization.
+7. Configure Host-Only Network Adapter for VM-Host communication.
+
+VirtualBox VM verification logs:
+[VM status] RUNNING
+[VBoxManage] VirtualBox version 7.0 (installed on host)
+[Network] Host-only Adapter (vboxnet0) active

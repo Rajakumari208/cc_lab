@@ -1,0 +1,11 @@
+--- Hadoop MapReduce Exec Out ---
+Mock MapReduce Job Running...
+Reduce completed successfully. part-r-00000 output generated.
+
+--- WordCount part-r-00000 Output ---
+cloud	1
+docker	1
+hadoop	1
+hello	3
+world	1
+

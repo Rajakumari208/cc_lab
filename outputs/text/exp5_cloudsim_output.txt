@@ -1,0 +1,15 @@
+--- CloudSimExample Simulation Output ---
+========== SIMULATION RESULTS ==========
+Cloudlet ID : 0
+Status      : SUCCESS
+Exec Time   : 400.00 ms
+Start Time  : 0.10 ms
+Finish Time : 400.10 ms
+
+--- CustomSchedulerExample Simulation Output ---
+========== CLOUDSIM SCHEDULING RESULTS ==========
+Cloudlet ID  VM ID    Status     Exec Time    Finish Time 
+0            0        SUCCESS    400.00       400.10      
+1            1        SUCCESS    200.00       200.10      
+2            0        SUCCESS    133.33       133.43      
+

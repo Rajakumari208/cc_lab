@@ -1,0 +1,4 @@
+Querying Google App Engine Local Server (http://localhost:8080/):
+GET / -> <h1>Hello, World!</h1><p>Running on Google App Engine!</p>
+
+GET /about -> <h1>About</h1><p>Simple GAE Python application.</p>

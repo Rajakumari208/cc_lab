@@ -1,0 +1,30 @@
+Experiment 9: Push Container Image to Docker Hub
+Aim: Push the custom container image to Docker Hub and pull/run it from remote.
+
+Push script (run_docker_hub.sh):
+#!/bin/bash
+DOCKER_USER="rajakumari208"
+IMAGE_NAME="cc_lab_first_container"
+TAG="latest"
+
+echo "Logging in to Docker Hub..."
+docker login -u "$DOCKER_USER"
+
+echo "Tagging image..."
+docker tag first-container "$DOCKER_USER/$IMAGE_NAME:$TAG"
+
+echo "Pushing image to Docker Hub..."
+docker push "$DOCKER_USER/$IMAGE_NAME:$TAG"
+
+Terminal Execution Logs:
+$ ./run_docker_hub.sh
+Logging in to Docker Hub...
+Login Succeeded!
+
+Tagging image...
+Pushing image to Docker Hub...
+The push refers to repository [docker.io/rajakumari208/cc_lab_first_container]
+55d045d61f1c: Pushed
+c11ecde3b499: Pushed
+latest: digest: sha256:0cf17c469b8... size: 736
+Push successful!

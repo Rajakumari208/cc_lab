@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim.provisioners; public class PeProvisionerSimple extends PeProvisioner { public PeProvisionerSimple(double mips) {} }

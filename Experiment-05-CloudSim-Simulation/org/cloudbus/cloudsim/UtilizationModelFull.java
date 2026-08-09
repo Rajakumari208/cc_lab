@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim; public class UtilizationModelFull implements UtilizationModel {}

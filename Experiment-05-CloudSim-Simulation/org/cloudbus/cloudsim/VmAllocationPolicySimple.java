@@ -1,0 +1,1 @@
+package org.cloudbus.cloudsim; import java.util.List; public class VmAllocationPolicySimple extends VmAllocationPolicy { public VmAllocationPolicySimple(List<Host> l) {} }

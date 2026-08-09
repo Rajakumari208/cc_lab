@@ -1,0 +1,30 @@
+Experiment 4: Google App Engine Launcher Static Web App
+Aim: Deploy and launch a static web page using Google App Engine Launcher.
+
+Application Config (app.yaml):
+runtime: python39
+instance_class: F1
+handlers:
+- url: /css
+  static_dir: www/css
+- url: /.*
+  static_files: www/index.html
+  upload: www/index.html
+
+index.html contents:
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>GAE Static Web App</title>
+</head>
+<body>
+  <h1>Google App Engine Launcher</h1>
+  <p>Static Web Application served successfully on GAE Local Dev Server!</p>
+</body>
+</html>
+
+Verification Log:
+1. Static files parsed successfully.
+2. Dev Server launched at: http://localhost:8080
+3. Resource loading CSS /css/style.css -> 200 OK.
