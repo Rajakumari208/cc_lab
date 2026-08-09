@@ -1,1 +1,0 @@
-package org.cloudbus.cloudsim; public interface UtilizationModel {}

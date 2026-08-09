@@ -1,1 +1,0 @@
-package org.cloudbus.cloudsim; import java.util.List; public class Datacenter { public Datacenter(String n, DatacenterCharacteristics c, VmAllocationPolicy p, List<Storage> s, double d) throws Exception {} }
